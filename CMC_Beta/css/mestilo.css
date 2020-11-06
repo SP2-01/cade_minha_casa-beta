@@ -1,0 +1,271 @@
+* {
+    font-family: sans-serif;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* CONFIGURAÇÕES DO HEADER */
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* background do header e display */
+.container-fluid {
+    display: flex;
+    background-color: #ffffff;
+    height: 60px;
+    width: 100vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-item {
+    margin-left: 8vw;
+    width: 87px;
+    height: 50px;
+}
+
+.item-login
+
+/* botão login */
+    {
+
+    /* Posição do botão e tamanho */
+
+    position: relative;
+    right: 135px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+
+    /* Configurações de cor e fonte */
+
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #EBB70C;
+}
+
+.item-den
+
+/* botão login */
+    {
+
+    /* Posição do botão e tamanho */
+
+    position: relative;
+    right: 135px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+
+    /* Configurações de cor e fonte */
+
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #c56060;
+}
+
+.item-cad
+
+/* botão cadastro */
+    {
+
+    /* Posição do botão e tamanho */
+
+    position: relative;
+    right: 150px;
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+
+    /* Configurações de cor e fonte */
+
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #391702;
+}
+
+.item-cad a,
+.item-login a,
+.item-den a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*fim do header */
+
+/*corpo*/
+
+#corpo {
+    display: block;
+    float: left;
+    width: 13vw;
+    height: 150;
+    padding-top: 5vh;
+
+    margin-top: 0vh;
+
+    background-color: #ffffff;
+
+}
+
+#junto {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 0vh;
+
+    justify-content: center;
+
+}
+
+#junto ul {
+    position: relative;
+    width: 100%;
+    margin: 0vh;
+    margin-top: 0vh;
+}
+
+#junto ul li {
+    position: relative;
+    width: 90%;
+    height: 7vh;
+    vertical-align: middle;
+
+
+
+    padding-top: 5vh;
+
+    color: black;
+    text-align: center;
+
+
+
+}
+
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+
+#li_home :hover {
+    width: 100%;
+    text-align: center;
+    font-size: 1vw;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #EBB70C;
+    transition: all ease-in-out 250ms;
+}
+
+#li_mden :hover {
+    width: 100%;
+    text-align: center;
+    font-size: 1vw;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #ff8800;
+    transition: all ease-in-out 250ms;
+}
+
+#li_logout :hover {
+    width: 100%;
+    text-align: center;
+    font-size: 1vw;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #cf4f4f;
+    transition: all ease-in-out 250ms;
+}
+
+/*lateal*/
+
+aside#lateral {
+
+    float: rigth;
+    width: 80%;
+    margin-top: 0vh;
+    padding-left: 7vh;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+aside#lateral h1 {
+    width: 87vw;
+    position: relative;
+    left: 33vw;
+    font-size: 1.5vw;
+}
+
+
+.box_denuncia {
+    border-radius: 0.5vw;
+    width: 23vw;
+    height: 50vh;
+    background: #f8f8f8;
+    margin-left: 20px;
+    padding: 0px;
+    margin-top: 20px;
+    overflow-y: hidden;
+    box-shadow: rgb(163, 163, 163) 0px 0px 1vh
+}
+
+.box_denuncia img {
+    margin: 0.6vw;
+    margin-left: 5.2vw;
+    position: relative;
+    width: 34vw;
+    height: 27vh;
+    border-radius: 0.2vw;
+
+}
+
+.inf {
+    padding-top: 0.3vh;
+    padding-left: 0.5vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: center;
+    height: 50vh;
+    position: relative;
+    top: 3vh;
+    font-size: 1.05vw;
+}
+
+.inf h4 {
+    font-size: 1.4vw;
+    position: relative;
+    width: 100%;
+}
+
+/*rodapé*/
+
+#rodape {
+    text-align: center;
+    font-size: 12px;
+}

@@ -1,0 +1,275 @@
+* {
+    font-family: sans-serif;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* CONFIGURAÇÕES DO HEADER */
+
+
+/* background do header e display */
+.container {
+    display: flex;
+    background-color: #ffffff;
+    height: 60px;
+    width: 100vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-item {
+    margin-left: 8vw;
+    width: 87px;
+    height: 50px;
+}
+
+.item-login
+
+/* botão login */
+    {
+
+    /* Posição do botão e tamanho */
+
+    position: relative;
+    right: 135px;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+
+    /* Configurações de cor e fonte */
+
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #EBB70C;
+}
+
+.item-cad
+
+/* botão cadastro */
+    {
+
+    /* Posição do botão e tamanho */
+
+    position: relative;
+    right: 150px;
+    width: 180px;
+    margin: 10px;
+    padding: 10px;
+
+    /* Configurações de cor e fonte */
+
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #391702;
+}
+
+.item-cad a,
+.item-login a {
+    text-decoration: none;
+    color: white;
+}
+
+/* FIM DO HEADER */
+body {
+    height: 100vh;
+    background-image: url(./image/fundo.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    background-color: #f8f8f8;
+
+}
+
+
+
+
+/* !!!! CONFIGURAÇÕES PARA PÁGINA LOGIN  !!!! */
+
+main#login {
+    display: flex;
+    border-radius: 30px;
+    padding: 0px;
+
+    height: 42.7vh;
+    width: 37.1vw;
+
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8vh;
+
+
+
+    background-color: #ffffff;
+    box-shadow: rgb(99, 99, 99) 0px 0px 4vh;
+}
+
+
+
+main#login form p {
+    font-size: 2vw;
+    margin-bottom: 3vh;
+    position: relative;
+    left: 10.20vw;
+    top: 6vh;
+}
+
+/* !!!! FIM DAS CONFIGURAÇÕES PARA PÁGINA LOGIN  !!!! */
+
+
+/* !!!! CONFIGURAÇÕES PARA PÁGINA CADASTRO  !!!! */
+
+main#cadastro {
+
+
+    display: flex;
+    border-radius: 3vh;
+    padding: 0;
+    justify-content: center;
+
+
+
+    min-height: 37vh;
+    min-width: 19vw;
+    height: 65vh;
+    width: 37vw;
+
+
+
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8vh;
+
+
+
+    background-color: #ffffff;
+    box-shadow: rgb(99, 99, 99) 0px 0px 4vh;
+}
+
+
+main#cadastro form p {
+    font-size: 2vw;
+    margin-bottom: 3vh;
+    position: relative;
+    left: 12.65vw;
+    top: 6vh;
+}
+
+/* !!!! FIM DAS CONFIGURAÇÕES PARA PÁGINA CADASTRO  !!!! */
+
+
+/* !!!! CONFIGURAÇÕES PARA PÁGINA DENÚNCIA  !!!! */
+
+main#denuncia {
+
+
+    display: flex;
+    border-radius: 3vh;
+    padding: 0;
+
+
+    min-height: 37vh;
+    min-width: 19vw;
+    height: 84vh;
+    width: 37vw;
+
+
+
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8vh;
+
+
+
+    background-color: #ffffff;
+    box-shadow: rgb(99, 99, 99) 0px 0px 4vh;
+}
+
+
+
+
+main#denuncia form p {
+    font-size: 2vw;
+    margin-bottom: 1vh;
+    position: relative;
+    left: 12.65vw;
+    top: 6vh;
+}
+
+/* !!!! FIM DAS CONFIGURAÇÕES PARA PÁGINA DENÚNCIA  !!!! */
+
+
+/* Configurações gerais dos inputs do site */
+
+form input {
+    position: relative;
+    align-items: center;
+    padding-left: 3.8vw;
+    margin-top: 1vh;
+
+    border-radius: 7px;
+    border: solid #cfcfcf 1px;
+
+    width: 28vw;
+
+    min-height: 5vh;
+    height: 5.5vh;
+
+    top: 9%;
+    left: 7%;
+}
+
+
+
+
+.buttonconfirm {
+    color: white;
+    height: 8vh;
+    width: 32vw;
+    padding-left: 0px;
+
+    border-radius: 1vw;
+    background-color: #60C571;
+
+    border-bottom: solid #3F7A49 3px;
+    border-right: solid #3F7A49 1px;
+    border-left: solid #3F7A49 1px;
+
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#buttondenuncia {
+    color: white;
+    height: 8vh;
+    width: 32vw;
+    padding-left: 0px;
+
+    border-radius: 1vw;
+    background-color: #c56060;
+
+    border-bottom: solid #4A0B0B 3px;
+    border-right: solid #4A0B0B 1px;
+    border-left: solid #4A0B0B 1px;
+
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.buttonconfirm,
+#buttondenuncia,
+.item-login,
+.item-cad :hover {
+    cursor: pointer;
+}
