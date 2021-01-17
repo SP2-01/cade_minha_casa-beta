@@ -10,53 +10,57 @@ if(!isset($_SESSION['nome'])){
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="icon" href="./image/logo.png" />
-    <title>Denúncia</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="icon" href="./image/logo.png" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;600&display=swap" rel="stylesheet">
+        <title>Sinalize um imóvel</title>
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <!-- topo do site -->
-        <nav>
-            <div class="container">
-                <div>
-                    <a href="./index.php">
-                        <img src="./image/Logo completo.png" alt="Página inicial" class="logo-item">
-                    </a>
-                </div>
-                <div class="item-cad"><a href="home.php">Página Inicial</a></div>
-                <div class="item-login"><a href="minhas_denuncias.php">Minhas Denúncias</a></div>
+        <header>
+            <!-- topo do site -->
+            <?php 
+                include ('navbar.html');
+            ?>
+        </header>
+        <div class="container-fluid">
+            <h1><b>COM ESSA AÇÃO <br> VOCÊ PODE AJUDAR MUITA GENTE!</b></h1>
+
+            <main id="denuncia">
+                <!-- formulário -->
+                
+                <form action="cadastra_denuncia.php" method="post">
+                    <p>Coloque abaixo os dados do <br> local que você deseja sinalizar:</p>
+
+                    <input type="text" name="cep" placeholder="Digite seu CEP">
+                    <br></br>
+                    <input type="text" name="rua" placeholder="Endereço">
+                    <br></br>
+                    <input type="text" name="numero" placeholder="Número">
+                    <br></br>
+                    <input type="text" name="bairro" placeholder="Bairro">
+                    <br></br>
+                    <input type="text" name="cidade" placeholder="Cidade">
+                    <br></br>
+                    <input type="text" name="estado" placeholder="Estado">
+                    </br></br>
+                    
+
+                    <button type="submit" id="buttondenuncia"> Quero mapear este imóvel! </button>
+                </form>
+            </main>
+        </div>
+    </body>
+    <footer>
+            <div class="container-fluid">
+                <p id="rodape">Cadê Minha Casa 2021 &copy; Todos os direitos reservados.</p>
+
             </div>
-        </nav>
-    </header>
-
-    <main id="denuncia">
-        <!-- formulário -->
-        <form action="cadastra_denuncia.php" method="post">
-            <p><b>Denuncie</b></p>
-
-
-            <input type="text" name="rua" placeholder="Digite o endereço">
-            <br></br>
-            <input type="text" name="numero" placeholder="Número">
-            <br></br>
-            <input type="text" name="bairro" placeholder="Bairro">
-            <br></br>
-            <input type="text" name="cidade" placeholder="Cidade">
-            <br></br>
-            <input type="text" name="estado" placeholder="Estado">
-            </br></br>
-            <input type="text" name="cep" placeholder="Digite seu CEP">
-            <br></br>
-
-            <input type="submit" value="CONFIRMAR DENÚNCIA" id="buttondenuncia">
-        </form>
-    </main>
-</body>
+    </footer>
 
 </html>
