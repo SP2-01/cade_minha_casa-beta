@@ -31,7 +31,7 @@ if(!isset($_SESSION['nome'])){
         <div class="container-fluid">
             <h1><b>COM ESSA AÇÃO <br> VOCÊ PODE AJUDAR MUITA GENTE!</b></h1>
 
-            <main id="denuncia">
+            <main id="denuncia"> 
                 <!-- formulário -->
                 
                 <form action="cadastra_denuncia.php" method="post">

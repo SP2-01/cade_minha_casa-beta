@@ -20,7 +20,7 @@
         </header>
         <div class="container-fluid justify-content-center">
             <main id="login">
-                <!-- formulário -->
+                <!-- formulário --> 
                 <form action="login_user.php" method="POST">
                     <p>Entre na sua conta</p>
                     <input type="email" name="email" placeholder="email" required>

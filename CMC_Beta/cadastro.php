@@ -21,7 +21,7 @@
         ?>
     </header>
 
-    <div class="container-fluid">
+    <div class="container-fluid"> 
     <h1><b>Cadastre-se e ajude pessoas <br> ao seu redor!</b></h1>
         <main id="cadastro">
             <!-- Formulário -->
